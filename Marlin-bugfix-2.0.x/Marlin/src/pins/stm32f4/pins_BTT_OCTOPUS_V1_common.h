@@ -213,12 +213,12 @@
   #define E1_CS_PIN                         PE4
 #endif
 
-#define E2_STEP_PIN                         PE2   // MOTOR 6
-#define E2_DIR_PIN                          PE3
-#define E2_ENABLE_PIN                       PD4
-#ifndef E2_CS_PIN
+#define X2_STEP_PIN                         PE2   // MOTOR 6  // RW - originally E2
+#define X2_DIR_PIN                          PE3 // RW - originally E2
+#define X2_ENABLE_PIN                       PD4 // RW - originally E2
+#ifndef X2_CS_PIN
 
-  #define E2_CS_PIN                         PE1
+  #define X2_CS_PIN                         PE1 // RW - originally E2
 #endif
 
 #define E3_STEP_PIN                         PE6   // MOTOR 7
@@ -315,8 +315,8 @@
   #define E1_SERIAL_TX_PIN                  PE4
   #define E1_SERIAL_RX_PIN      E1_SERIAL_TX_PIN
 
-  #define E2_SERIAL_TX_PIN                  PE1
-  #define E2_SERIAL_RX_PIN      E2_SERIAL_TX_PIN
+  #define X2_SERIAL_TX_PIN                  PE1 // RW origininally E2
+  #define X2_SERIAL_RX_PIN      X2_SERIAL_TX_PIN // RW originally E2
 
   #define E3_SERIAL_TX_PIN                  PD3
   #define E3_SERIAL_RX_PIN      E3_SERIAL_TX_PIN
