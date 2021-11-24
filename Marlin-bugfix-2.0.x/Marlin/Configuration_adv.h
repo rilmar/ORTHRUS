@@ -498,7 +498,7 @@
  */
 #define USE_CONTROLLER_FAN // RW activate fan when board is in use
 #if ENABLED(USE_CONTROLLER_FAN)
-  #define CONTROLLER_FAN_PIN FAN3_PIN           // Set a custom pin for the controller fan RW
+  #define CONTROLLER_FAN_PIN FAN4_PIN           // Set a custom pin for the controller fan RW
   //#define CONTROLLER_FAN_USE_Z_ONLY       // With this option only the Z axis is considered
   //#define CONTROLLER_FAN_IGNORE_Z         // Ignore Z stepper. Useful when stepper timeout is disabled.
   #define CONTROLLERFAN_SPEED_MIN         0 // (0-255) Minimum speed. (If set below this value the fan is turned off.)
@@ -587,8 +587,8 @@
 
 // RW examine Mrlin/src/pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h for pin layout
 // reserve fan0 for slicer control
-#define E0_AUTO_FAN_PIN FAN1_PIN
-#define E1_AUTO_FAN_PIN FAN2_PIN // reserved for idex
+#define E0_AUTO_FAN_PIN FAN2_PIN
+#define E1_AUTO_FAN_PIN FAN3_PIN // reserved for idex
 #define E2_AUTO_FAN_PIN -1
 #define E3_AUTO_FAN_PIN -1
 #define E4_AUTO_FAN_PIN -1
